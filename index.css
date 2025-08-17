@@ -1,0 +1,69 @@
+header {
+    padding: 40px;
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    background: #002A3A;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #cddc2a;
+    color: rgb(0, 0, 0);
+}
+
+
+.completion {
+    margin-top: 40px;
+    padding: 10px;
+    border: none;
+    background-color: #002A3A;
+    color: white;
+    text-align: center;
+
+}
+p {
+    font-size: 20px;   
+}
+
+.link {
+    margin-bottom: 30px;
+    width: 75%;
+    border: none;
+    background-color: #002A3A;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.links {
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+progress {
+    width: 50%;
+
+    border: none;
+}
+
+button:hover {
+    background-color: #00161f;
+    cursor: pointer;
+}
+
+a {
+    padding: 40px;
+    font-size: 40px;
+    background: white;
+    text-decoration: none;
+    color: #002A3A;
+}
+
+.notice {
+    color: red;
+}
