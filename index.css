@@ -1,4 +1,5 @@
 header {
+    margin-top: 0px;
     padding: 40px;
     font-size: 40px;
     text-align: left;
@@ -8,14 +9,15 @@ header {
 
 body {
     font-family: Arial;
-    padding: 20px;
+    margin: 0;
     background: #cddc2a;
     color: rgb(0, 0, 0);
+    padding: 10px;
 }
 
 
 .completion {
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 10px;
     border: none;
     background-color: #002A3A;
@@ -24,6 +26,7 @@ body {
 
 }
 p {
+    margin: 10px;
     font-size: 20px;   
 }
 
