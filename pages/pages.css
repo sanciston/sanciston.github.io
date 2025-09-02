@@ -1,45 +1,73 @@
+/* ====== Header ====== */
 header {
-    margin-top: 0px;
-    padding: 40px;
-    font-size: 40px;
+    margin-top: 0;
+    padding: 20px; /* reduce padding for mobile */
+    font-size: 2rem; /* relative sizing */
     text-align: left;
     color: white;
     background: #002A3A;
 }
 
+/* ====== Body ====== */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     background: #cddc2a;
-    color: rgb(0, 0, 0);
+    color: #000;
     padding: 10px;
 }
 
+/* ====== Headings ====== */
 h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
+/* ====== Paragraphs ====== */
 p {
-    margin: 10px;
-    font-size: 20px;   
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
+/* ====== Links ====== */
 a {
-    padding: 40px;
-    font-size: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
     background: white;
     text-decoration: none;
     color: #002A3A;
+    margin: 5px 0;
+    border-radius: 5px;
 }
 
- .column {
-    float: left;
-    width: 32.93333%;
-    padding: 0.2%;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  } 
+/* ====== Columns ====== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%; /* spacing between columns */
+}
+
+.column {
+    flex: 1 1 32%; /* grow/shrink with min width 32% */
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+
+/* ====== Responsive ====== */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .column {
+        flex: 1 1 100%; /* full-width columns on small screens */
+    }
+    a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
